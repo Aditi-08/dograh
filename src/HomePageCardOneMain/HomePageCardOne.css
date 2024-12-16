@@ -1,0 +1,202 @@
+/* General Styling */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container */
+.homepage-card-one {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(
+    to bottom right,
+    #bfdfd9,
+    white 40%,
+    white 60%,
+    #beddd7
+  );
+  border-radius: 10px; /* Optional for rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional for shadow */
+
+  /* Add these properties */
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Adjust height to fit as a banner or large section */
+  margin: 0 auto; /* Center align if using smaller widths */
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 3rem; /* Increase the font size */
+  font-weight: 900; /* Make it extra bold */
+  color: #54bd95; /* Keep the green color */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
+.nav-links li {
+  cursor: pointer;
+  font-size: 1rem;
+  color: #666;
+}
+
+.auth-buttons .login-btn,
+.auth-buttons .signup-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px 30px;
+}
+
+.signup-button {
+  background-color: #54bd95; /* Green background */
+  color: white; /* White text */
+  border: none; /* Remove borders */
+  padding: 10px 20px; /* Adjust padding */
+  font-size: 16px; /* Adjust font size */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Show pointer on hover */
+}
+
+.signup-button:hover {
+  background-color: #52bdaa; /* Slightly darker green on hover */
+}
+
+/* Header Section */
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+.header-content {
+  flex: 1;
+  max-width: 50%;
+  text-align: left;
+}
+
+.header-content h1 {
+  font-family: Inter;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 80px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.header-content p {
+  font-family: Inter;
+  max-width: 70%;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left; /* Centers the text horizontally */
+  text-decoration-style: solid;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin: 0 auto 50px auto; /* Centers the element and adds 20px margin below */
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.request-demo-btn {
+  background: #54bd95;
+  color: #ffffff; /* White text */
+  font-size: 16px; /* Adjust font size */
+  font-weight: bold; /* Make text bold */
+  border: none; /* Remove outline */
+  border-radius: 50px; /* Make the button fully rounded */
+  padding: 20px 30px; /* Add spacing inside the button */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  text-align: center; /* Center the text */
+  display: inline-block; /* Ensure the button takes only necessary space */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.dograh-works-btn {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+/* Header Image Section */
+.header-image {
+  position: relative;
+  flex: 1;
+  max-width: 50%;
+}
+
+.profile-image {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.overlay-icons .icon {
+  position: absolute;
+  background: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.overlay-icons .total-income {
+  top: 10%;
+  left: 5%;
+}
+
+.overlay-icons .credit-card {
+  bottom: 10%;
+  right: 5%;
+  text-align: left;
+}
+
+/* Footer Section */
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: last baseline; /* Aligns content to the bottom */
+  height: 100vh; /* Makes the section take full viewport height */
+}
+
+.footer-section p {
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48.41px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin: 0; /* Remove any margin for perfect alignment */
+}
+
+.brand-logos {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #777;
+}
